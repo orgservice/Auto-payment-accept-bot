@@ -7,10 +7,10 @@ class PaymentConfig:
     BHARATPE_CALLBACK_URL = os.getenv('BHARATPE_CALLBACK_URL')
     
     # PayTM Configuration
-    PAYTM_MERCHANT_ID = os.getenv('PAYTM_MERCHANT_ID')
-    PAYTM_MERCHANT_KEY = os.getenv('PAYTM_MERCHANT_KEY')
+    PAYTM_MERCHANT_ID = os.getenv('PAYTM_MERCHANT_ID', 'IKFMfs86057296096803')
+    PAYTM_MERCHANT_KEY = os.getenv('PAYTM_MERCHANT_KEY', 'Yrq0NIq2hqVS3V@a')
     PAYTM_WEBSITE = os.getenv('PAYTM_WEBSITE', 'WEBSTAGING')
-    PAYTM_CALLBACK_URL = os.getenv('PAYTM_CALLBACK_URL')
+    PAYTM_CALLBACK_URL = os.getenv('PAYTM_CALLBACK_URL', 'https://c47c8068-ffa3-439b-960b-544a4508bffc-00-6t85pq7i2iu0.pike.replit.dev/')
     PAYTM_TXN_URL = (
         "https://securegw-stage.paytm.in/theia/processTransaction"
         if settings.DEBUG
