@@ -11,7 +11,7 @@ class Settings:
     OWNER_ID = int(os.getenv('OWNER_ID', '5442514242'))
     
     # Database Configuration
-    DB_URL = os.getenv('DB_URL', 'sqlite:///database.db')
+    DB_URL = os.getenv('DB_URL', 'postgres://koyeb-adm:npg_kZQ2O4GVqWmT@ep-rough-frog-agawds6u.c-2.eu-central-1.pg.koyeb.app/koyebdb')
     
     # Group/Channel IDs
     GROUP_ID = int(os.getenv('GROUP_ID', '-1003350550618'))
