@@ -5,20 +5,20 @@ load_dotenv()
 
 class Settings:
     # Telegram Configuration
-    API_ID = int(os.getenv('API_ID'))
-    API_HASH = os.getenv('API_HASH')
-    BOT_TOKEN = os.getenv('BOT_TOKEN')
-    OWNER_ID = int(os.getenv('OWNER_ID'))
+    API_ID = int(os.getenv('API_ID', '29158577'))
+    API_HASH = os.getenv('API_HASH', '5a31bb001fafce5f0c8669b0a8138280')
+    BOT_TOKEN = os.getenv('BOT_TOKEN', '8445776517:AAFACN-ITibKhAKgrxD3IgSXlvA3RZKq5c4')
+    OWNER_ID = int(os.getenv('OWNER_ID', '5442514242'))
     
     # Database Configuration
     DB_URL = os.getenv('DB_URL', 'sqlite:///database.db')
     
     # Group/Channel IDs
-    GROUP_ID = int(os.getenv('GROUP_ID', 0))
-    CHANNEL_ID = int(os.getenv('CHANNEL_ID', 0))
+    GROUP_ID = int(os.getenv('GROUP_ID', '-1003350550618'))
+    CHANNEL_ID = int(os.getenv('CHANNEL_ID', '-1003386923017'))
     
     # Payment Verification
-    PAYMENT_VERIFICATION_TIMEOUT = int(os.getenv('PAYMENT_VERIFICATION_TIMEOUT', 3600))  # 1 hour
+    PAYMENT_VERIFICATION_TIMEOUT = int(os.getenv('PAYMENT_VERIFICATION_TIMEOUT', 300))  # 5 minute
     
     # Logging Configuration
     LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')
